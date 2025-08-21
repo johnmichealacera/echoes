@@ -1,0 +1,467 @@
+.streaming-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.streaming-modal-content {
+  background: rgba(15, 15, 35, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.streaming-modal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.streaming-modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.streaming-modal-subtitle {
+  font-size: 1.125rem;
+  color: #a5b4fc;
+  margin: 0;
+  font-weight: 400;
+}
+
+.streaming-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: #a5b4fc;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.streaming-close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* YouTube Section Styles */
+.youtube-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.youtube-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.youtube-section:hover::before {
+  opacity: 1;
+}
+
+.youtube-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.youtube-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.youtube-description {
+  color: #a5b4fc;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.youtube-player-container {
+  position: relative;
+  z-index: 1;
+}
+
+.youtube-loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 0, 0, 0.3);
+  border-top: 3px solid #ff0000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.youtube-search-prompt {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.youtube-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.youtube-search-prompt h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.youtube-search-prompt p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+
+.youtube-search-btn {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  border: none;
+  color: #ffffff;
+  padding: 0.875rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.youtube-search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+  background: linear-gradient(135deg, #ff1111 0%, #dd0000 100%);
+}
+
+/* YouTube Embed Styles */
+.youtube-embed-section {
+  padding: 1rem;
+}
+
+.youtube-player-wrapper {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 0, 0, 0.2);
+}
+
+.embedded-player {
+  position: relative;
+}
+
+.youtube-iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 12px 12px 0 0;
+  background: #000000;
+}
+
+.player-info {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.player-info p {
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.player-note {
+  color: #a5b4fc !important;
+  font-size: 0.75rem !important;
+  font-style: italic;
+}
+
+.youtube-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.youtube-new-search-btn,
+.youtube-external-btn {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.youtube-new-search-btn:hover,
+.youtube-external-btn:hover {
+  background: rgba(255, 0, 0, 0.3);
+  border-color: rgba(255, 0, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+.no-video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 315px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.placeholder-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.no-video-placeholder p {
+  color: #a5b4fc;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.fallback-youtube-btn {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  border: none;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.fallback-youtube-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+  background: linear-gradient(135deg, #ff1111 0%, #dd0000 100%);
+}
+
+/* Streaming Divider */
+.streaming-divider {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.streaming-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+}
+
+.streaming-divider span {
+  background: rgba(15, 15, 35, 0.95);
+  padding: 0 1rem;
+  color: #a5b4fc;
+  font-size: 0.875rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+.streaming-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.streaming-service-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.streaming-service-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--service-color) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.streaming-service-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--service-color);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.streaming-service-btn:hover::before {
+  opacity: 0.1;
+}
+
+.service-icon {
+  font-size: 2rem;
+  width: 50px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.service-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.service-name {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+.service-description {
+  color: #a5b4fc;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.service-arrow {
+  color: var(--service-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.streaming-service-btn:hover .service-arrow {
+  transform: translateX(4px);
+}
+
+.streaming-footer {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.streaming-note {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .streaming-modal-content {
+    padding: 1.5rem;
+    max-width: 95vw;
+  }
+  
+  .streaming-modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .youtube-section {
+    padding: 1rem;
+  }
+  
+  .youtube-title {
+    font-size: 1.25rem;
+  }
+  
+  .youtube-search-prompt {
+    padding: 1.5rem;
+  }
+  
+  .streaming-service-btn {
+    padding: 1rem;
+  }
+  
+  .service-icon {
+    font-size: 1.5rem;
+    width: 40px;
+  }
+}
