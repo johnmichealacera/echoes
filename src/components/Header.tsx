@@ -6,6 +6,13 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="header-content">
         <div className="title-section">
+          <div className="logo-container">
+            <img 
+              src="/echoes-logo.ico" 
+              alt="Echoes Logo" 
+              className="app-logo"
+            />
+          </div>
           <h1 className="app-title">
             <span className="title-main">Echoes</span>
             <span className="title-subtitle">Awakening Through Songs</span>

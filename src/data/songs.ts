@@ -8,7 +8,7 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'Very high',
     reflection: 'Listening to the higher self and killing of ego. Loneliness, setbacks, and the full spectrum of the awakening journey.',
     awakeningStage: 'Death',
-    createdAt: new Date().toISOString(),
+    createdAt: '8/21/2025',
     youtubeId: 'fJ9rUzIMcZQ' // Queen - Bohemian Rhapsody (Official Video)
   },
   {
@@ -18,7 +18,7 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'Very high',
     reflection: 'We are all just nothing — but that realization is liberating.',
     awakeningStage: 'Death',
-    createdAt: new Date().toISOString(),
+    createdAt: '8/21/2025',
     youtubeId: 'tH2w6Oxx0kQ' // Kansas - Dust in the Wind (Official Audio)
   },
   {
@@ -28,8 +28,8 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'High',
     reflection: 'Life is short; ego clouds our time span. Awakening means noticing before it\'s too late.',
     awakeningStage: 'Death',
-    createdAt: new Date().toISOString(),
-    youtubeId: 'F90Cw4l-8NY' // Bastille - Pompeii (Official Music Video)
+    createdAt: '8/21/2025',
+    youtubeId: '8nfhHBJQXOY' // Bastille - Pompeii (Official Music Video)
   },
   {
     id: '4',
@@ -38,7 +38,7 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'High',
     reflection: 'Surrender. Let everything unfold. Trust the frequency of awakening.',
     awakeningStage: 'Surrender',
-    createdAt: new Date().toISOString(),
+    createdAt: '8/21/2025',
     youtubeId: 'QDYfEBY9NM4' // The Beatles - Let It Be (Official Audio)
   },
   {
@@ -48,7 +48,7 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'Very high',
     reflection: 'Pure higher-self awakening. Overflowing vibration. Irresistible joy.',
     awakeningStage: 'Joy',
-    createdAt: new Date().toISOString(),
+    createdAt: '8/21/2025',
     youtubeId: 'HgzGwKwLmgM' // Queen - Don't Stop Me Now (Official Video)
   },
   {
@@ -58,7 +58,7 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'High',
     reflection: 'A vision of humanity awake together — not just me, but all of us.',
     awakeningStage: 'Vision',
-    createdAt: new Date().toISOString(),
+    createdAt: '8/21/2025',
     youtubeId: 'YkgkThdzX-8' // John Lennon - Imagine (Official Video)
   },
   {
@@ -68,7 +68,7 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'High',
     reflection: 'High resonance and vibration — the pure love that awakens us to presence in every moment.',
     awakeningStage: 'Joy',
-    createdAt: new Date().toISOString(),
+    createdAt: '8/21/2025',
     youtubeId: 'JkK8g6FMEXE' // Aerosmith - I Don't Want to Miss a Thing (Official Music Video)
   },
   {
@@ -78,8 +78,8 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'High',
     reflection: 'Pure bliss with high resonance — the wisdom of accepting what is and finding peace in the cosmic order.',
     awakeningStage: 'Surrender',
-    createdAt: new Date().toISOString(),
-    youtubeId: 'sTn7O7l3LBY' // Les Crane - Desiderata (Official Audio)
+    createdAt: '8/21/2025',
+    youtubeId: '-eDsJNsG58M' // Les Crane - Desiderata (user-recommended version)
   },
   {
     id: '9',
@@ -88,8 +88,8 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'Medium',
     reflection: 'Emotionally moving — contemplating and remembering our higher self through the depths of cinematic awakening.',
     awakeningStage: 'Vision',
-    createdAt: new Date().toISOString(),
-    youtubeId: 'RxabLA7UQ9k' // Hans Zimmer - Remember (from The Lion King)
+    createdAt: '8/21/2025',
+    youtubeId: 'RakhywpkY-k' // Hans Zimmer - Remember (Official Lion King Soundtrack)
   },
   {
     id: '10',
@@ -98,7 +98,7 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'High',
     reflection: 'Our ego wanting us to be noticed, but we purely dissolve it for pure love and awakening.',
     awakeningStage: 'Death',
-    createdAt: new Date().toISOString(),
+    createdAt: '8/21/2025',
     youtubeId: 'XFkzRNyygfk' // Radiohead - Creep (Official Music Video)
   },
   {
@@ -108,8 +108,8 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'High',
     reflection: 'Modern awakening on a lonely road — liberating in knowing what we are doing is purely nothing, yet everything.',
     awakeningStage: 'Vision',
-    createdAt: new Date().toISOString(),
-    youtubeId: 'SnTL7KLTECI' // Ghost - Guiding Light (Official Audio)
+    createdAt: '8/21/2025',
+    youtubeId: 'rv7jSq1Qkhs' // Ghost - Guiding Light (embed-friendly version)
   },
   {
     id: '12',
@@ -118,8 +118,8 @@ export const initialSongs: ResonanceNote[] = [
     resonance: 'Very high',
     reflection: 'The loneliness of awakening and being the observer and watcher in this world. Sending message to the world to start their awakening journey.',
     awakeningStage: 'Vision',
-    createdAt: new Date().toISOString(),
-    youtubeId: 'u9Dg-g7t2l4' // Simon and Garfunkel - The Sound of Silence (embed-friendly version)
+    createdAt: '8/21/2025',
+    youtubeId: 'NAEppFUWLfc' // Simon and Garfunkel - The Sound of Silence (embed-friendly version)
   }
 ];
 
