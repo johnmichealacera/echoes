@@ -120,6 +120,76 @@ export const initialSongs: ResonanceNote[] = [
     awakeningStage: 'Vision',
     createdAt: '8/21/2025',
     youtubeId: 'NAEppFUWLfc' // Simon and Garfunkel - The Sound of Silence (embed-friendly version)
+  },
+  {
+    id: '13',
+    songTitle: 'Radioactive',
+    artist: 'Imagine Dragons',
+    resonance: 'Very high',
+    reflection: 'Feelings of awakening, of truly being present at the moment, the total annihilation of the programming, and knowing we are still walking in the system but with a renewed hunger and vision.',
+    awakeningStage: 'Vision',
+    createdAt: '08/24/2025',
+    youtubeId: 'ktvTqknDobU' // Imagine Dragons - Radioactive (Official Music Video)
+  },
+  {
+    id: '14',
+    songTitle: 'Hall of Fame',
+    artist: 'The Script',
+    resonance: 'Very high',
+    reflection: 'Breaking community stigma, awakening does not need permission, following your higher self. No more chains, no more limitations.',
+    awakeningStage: 'Vision',
+    createdAt: '08/24/2025',
+    youtubeId: 'mk48xRzuNvA' // The Script - Hall of Fame ft. will.i.am (Official Video)
+  },
+  {
+    id: '15',
+    songTitle: 'Counting Stars',
+    artist: 'OneRepublic',
+    resonance: 'Very high',
+    reflection: 'Following higher self, seeing the programming and matrix system as clear as sky, fighting with the ego.',
+    awakeningStage: 'Death',
+    createdAt: '08/24/2025',
+    youtubeId: 'hT_nvWreIhg' // OneRepublic - Counting Stars (Official Music Video)
+  },
+  {
+    id: '16',
+    songTitle: 'Can\'t Stop the Feeling!',
+    artist: 'Justin Timberlake',
+    resonance: 'High',
+    reflection: 'When the vibration and frequency turns on like in deep work and resonance with high vibration things the feeling is pure joy and bliss. Freedom of expression and pure creativity in motion.',
+    awakeningStage: 'Joy',
+    createdAt: '08/24/2024',
+    youtubeId: 'ru0K8uYEZWw' // Justin Timberlake - Can't Stop The Feeling! (Official Video)
+  },
+  {
+    id: '17',
+    songTitle: 'Best Day of My Life',
+    artist: 'American Authors',
+    resonance: 'High',
+    reflection: 'Fully realizing awakening. Loving the feeling and enjoying every moment. Anagram on do not wake the ego up.',
+    awakeningStage: 'Joy',
+    createdAt: '08/24/2025',
+    youtubeId: 'Y66j_BUCBMY' // American Authors - Best Day Of My Life (Official Music Video)
+  },
+  {
+    id: '18',
+    songTitle: 'Wake Me Up',
+    artist: 'Avicii',
+    resonance: 'Medium',
+    reflection: 'Started to realize, the society does not know anything. Starting to hear the words of the inner self. Still listening, seeds are starting to grow.',
+    awakeningStage: 'Vision',
+    createdAt: '08/24/2025',
+    youtubeId: 'IcrbM1l_BoI' // Avicii - Wake Me Up (Official Video)
+  },
+  {
+    id: '19',
+    songTitle: 'Titanium',
+    artist: 'Sia',
+    resonance: 'High',
+    reflection: 'Full embrace of awakening. Society ego reflections does not chip in the higher self. At a stage where it is fully aware of the truth inside.',
+    awakeningStage: 'Surrender',
+    createdAt: '08/24/2025',
+    youtubeId: 'JRfuAukYTKg' // Sia - Titanium ft. David Guetta (Official Video)
   }
 ];
 

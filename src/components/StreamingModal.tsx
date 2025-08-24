@@ -145,7 +145,7 @@ const StreamingModal: React.FC<StreamingModalProps> = ({ isOpen, onClose, song }
                       <p>🎵 Now playing: <strong>{song.songTitle}</strong> by <strong>{song.artist}</strong></p>
                       <p className="player-note">
                         {song.youtubeId 
-                          ? "Enjoy listening right here on your awakening journey page!" 
+                          ? song.reflection 
                           : "This song will open in YouTube for the best listening experience."
                         }
                       </p>
