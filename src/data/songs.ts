@@ -105,10 +105,10 @@ export const initialSongs: ResonanceNote[] = [
     id: '11',
     songTitle: 'Guiding Light',
     artist: 'Ghost',
-    resonance: 'High',
-    reflection: 'Modern awakening on a lonely road — liberating in knowing what we are doing is purely nothing, yet everything.',
+    resonance: 'Low',
+    reflection: 'The ego talking and feeling empty as if walking in a path that leads to nowhere. Gives caution that when we embody the ego, life seems to have no meaning.',
     awakeningStage: 'Vision',
-    createdAt: '8/21/2025',
+    createdAt: '08/25/2025',
     youtubeId: 'rv7jSq1Qkhs' // Ghost - Guiding Light (embed-friendly version)
   },
   {
