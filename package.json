@@ -1,7 +1,7 @@
 {
   "name": "echoes",
   "version": "1.0.0",
-  "description": "A personal resonance map, told through music - an awakening journey web app",
+  "description": "A personal resonance map, told through music - an resonance journey web app",
   "private": true,
   "dependencies": {
     "@types/node": "^20.0.0",

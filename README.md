@@ -1,50 +1,50 @@
-# 🌌 Echoes - Awakening Through Songs
+# 🌌 Echoes - Resonance Through Music
 
 *A personal resonance map, told through music.*
 
 **This is not a playlist. This is not a review site.**  
-It's a mirror of my awakening journey — expressed through the songs that vibrate with my soul at different stages of the path.
+It's a mirror of my journey — expressed through the songs that vibrate with my soul at different stages of the path.
 
 ## ✨ The Vision
 
-Each song carries a frequency, a message, a moment of remembrance. I call them **Resonance Notes** — short reflections on what each piece awakens in me: the death of ego, surrender to impermanence, the joy of higher self, or the vision of a collective world at peace.
+Each song carries a frequency, a message, a moment of remembrance. I call them **Resonance Notes** — short reflections on what each piece reveals in me: the dissolution of old patterns, surrender to impermanence, the joy of pure essence, or the vision of a collective world at peace.
 
-This project is a living diary disguised as a web app, documenting the subtle downloads and quiet awakenings that music brings to the spiritual journey.
+This project is a living diary disguised as a web app, documenting the subtle downloads and quiet transformations that music brings to the spiritual journey.
 
 ## 🎵 **Listen & Explore**
 
-**Experience the full awakening spectrum through 12+ carefully curated songs:**
+**Experience the full transformation spectrum through 12+ carefully curated songs:**
 
-### Death Stage - Ego Dissolution
-- **Bohemian Rhapsody – Queen** *Very high resonance* - The full spectrum of awakening: loneliness, setbacks, and listening to the higher self
+### Death Stage - Pattern Dissolution
+- **Bohemian Rhapsody – Queen** *Very high resonance* - The full spectrum of transformation: loneliness, setbacks, and listening to that voice beyond the noise
 - **Dust in the Wind – Kansas** *Very high resonance* - Liberation in realizing we are nothing
-- **Pompeii – Bastille** *High resonance* - Life is short; awakening means noticing before it's too late
+- **Pompeii – Bastille** *High resonance* - Life is short; noticing before it's too late
 - **Creep – Radiohead** *High resonance* - Ego wanting to be noticed, dissolved for pure love
 
 ### Surrender Stage - Letting Go
-- **Let It Be – The Beatles** *High resonance* - Trust the frequency of awakening; let everything unfold
+- **Let It Be – The Beatles** *High resonance* - Trust the rhythm of life; let everything unfold
 - **Desiderata – Les Crane** *High resonance* - Pure bliss in accepting the cosmic order
 
-### Joy Stage - Higher Self Awakening
-- **Don't Stop Me Now – Queen** *Very high resonance* - Pure higher-self awakening and overflowing vibration
-- **I Don't Want to Miss a Thing – Aerosmith** *High resonance* - Pure love awakening us to presence
+### Joy Stage - Pure Essence Flowing
+- **Don't Stop Me Now – Queen** *Very high resonance* - Pure essence flowing through and overflowing vibration
+- **I Don't Want to Miss a Thing – Aerosmith** *High resonance* - Pure love bringing presence to every moment
 
-### Vision Stage - Collective Awakening
-- **Imagine – John Lennon** *High resonance* - Humanity awake together, not just me but all of us
-- **Remember – Hans Zimmer** *Medium resonance* - Contemplating our higher self through cinematic depth
-- **Guiding Light – Ghost** *High resonance* - Modern awakening on a lonely road, liberating in its nothingness
-- **The Sound of Silence – Simon and Garfunkel** *Very high resonance* - The loneliness of awakening, being the observer, sending the message for others to awaken
+### Vision Stage - Collective Potential
+- **Imagine – John Lennon** *High resonance* - Humanity united together, not just me but all of us
+- **Remember – Hans Zimmer** *Medium resonance* - Contemplating our essence through cinematic depth
+- **Guiding Light – Ghost** *Low resonance* - The ego talking and feeling empty, walking a path that leads nowhere
+- **The Sound of Silence – Simon and Garfunkel** *Very high resonance* - The loneliness of being the observer, sending the message for others to start their journey of awareness
 
 ## 🌱 Why This Exists
 
-Awakening is hard to put into words. But sometimes a song does it better than a thousand pages. This project is my way of documenting the subtle — the tingling bursts, the quiet downloads, the moments of deep resonance — and sharing them without preaching.
+Transformation is hard to put into words. But sometimes a song does it better than a thousand pages. This project is my way of documenting the subtle — the tingling bursts, the quiet downloads, the moments of deep resonance — and sharing them without preaching.
 
 ## 🚀 **App Features**
 
 ### 🎵 **Inline Music Experience**
 - **YouTube integration** - Listen to songs directly on the page without leaving your journey
 - **Instant playback** - Click "Listen" and music loads immediately in beautiful modal players
-- **No interruptions** - Stay immersed in the awakening experience while music plays
+- **No interruptions** - Stay immersed in the transformative experience while music plays
 
 ### 🎨 **Mystical Interface**
 - **Cosmic design** - Dark mystical background with floating orbs and ethereal animations
@@ -53,9 +53,9 @@ Awakening is hard to put into words. But sometimes a song does it better than a 
 - **Resonance tracking** - Visual indicators for Very High, High, Medium, and Low resonance levels
 
 ### ✨ **Interactive Journey**
-- **Add your own songs** - Expand the collection with your personal awakening music
-- **Stage organization** - Songs automatically organize by awakening phase
-- **Reflection sharing** - Read deep insights about what each song awakens
+- **Add your own songs** - Expand the collection with your personal transformative music
+- **Stage organization** - Songs automatically organize by transformation phase
+- **Reflection sharing** - Read deep insights about what each song reveals
 - **Mobile optimized** - Beautiful experience across all devices
 
 ### 🛡️ **Copyright Safe**
@@ -108,41 +108,41 @@ npm run build
 ### **Explore the Journey**
 1. **🌌 Enter the Space** - Immerse yourself in the cosmic, mystical interface
 2. **🎧 Listen Inline** - Click any "Listen" button to play music directly on the page
-3. **📊 Filter by Stage** - Navigate Death → Surrender → Joy → Vision awakening phases
-4. **💫 Read Reflections** - Discover what each song awakens in the spiritual journey
+3. **📊 Filter by Stage** - Navigate Death → Surrender → Joy → Vision transformation phases
+4. **💫 Read Reflections** - Discover what each song reveals in the spiritual journey
 
 ### **Contribute to the Journey**
-5. **➕ Add Your Songs** - Click the floating "+" to add your own awakening music
+5. **➕ Add Your Songs** - Click the floating "+" to add your own transformative music
 6. **🎯 Set Resonance** - Mark how deeply each song resonates (Very High → Low)
-7. **✍️ Share Insights** - Write reflections on what each piece awakens in you
+7. **✍️ Share Insights** - Write reflections on what each piece reveals in you
 8. **🌱 Watch it Grow** - See your personal resonance map expand organically
 
 ### **The Experience**
 - **No new tabs** - Everything happens within the beautiful, mystical interface
 - **Instant music** - Songs load and play immediately when you click "Listen"
-- **Stay present** - Remain immersed in your awakening journey while exploring
+- **Stay present** - Remain immersed in your transformative journey while exploring
 
 ## 🎨 Design Philosophy
 
-The app uses a **mystical, ethereal aesthetic** that reflects the spiritual nature of the awakening journey:
+The app uses a **mystical, ethereal aesthetic** that reflects the spiritual nature of the transformative journey:
 
 - **Dark cosmic background** with deep blues and purples
 - **Glassmorphism effects** for a modern, otherworldly feel
 - **Floating orbs** and subtle animations for visual interest
 - **Typography hierarchy** using Playfair Display for headings and Inter for body text
-- **Color-coded stages** to visually distinguish awakening phases
+- **Color-coded stages** to visually distinguish transformation phases
 
 ## 🔮 **Future Vision**
 
-This is just the beginning. The awakening journey continues to evolve:
+This is just the beginning. The transformative journey continues to evolve:
 
-- [ ] **Community Resonance** - Share and discover awakening music with fellow travelers
+- [ ] **Community Resonance** - Share and discover transformative music with fellow travelers
 - [x] **~~Inline Music~~** - ✨ **Complete!** Listen directly without leaving the journey
-- [ ] **Journey Visualization** - Visual maps of your awakening progress over time
-- [ ] **Stage Deep Dives** - Expanded insights into each awakening phase
-- [ ] **Resonance Analytics** - Patterns in your musical awakening journey
-- [ ] **Collective Playlists** - Community-curated awakening soundtracks
-- [ ] **Mobile App** - Native iOS/Android awakening companion
+- [ ] **Journey Visualization** - Visual maps of your transformation progress over time
+- [ ] **Stage Deep Dives** - Expanded insights into each transformation phase
+- [ ] **Resonance Analytics** - Patterns in your musical transformation journey
+- [ ] **Collective Playlists** - Community-curated transformation soundtracks
+- [ ] **Mobile App** - Native iOS/Android transformation companion
 - [ ] **AI Resonance** - Intelligent song recommendations based on your journey stage
 
 *The app grows as consciousness expands.* 🌱

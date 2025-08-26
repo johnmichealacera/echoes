@@ -207,7 +207,7 @@ const StreamingModal: React.FC<StreamingModalProps> = ({ isOpen, onClose, song }
         
         <div className="streaming-footer">
           <p className="streaming-note">
-            💡 YouTube search opens in a new tab, but you can keep listening while exploring your awakening journey here.
+            💡 YouTube search opens in a new tab, but you can keep listening while exploring your transformation journey here.
           </p>
         </div>
       </div>

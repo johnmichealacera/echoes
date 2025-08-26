@@ -93,7 +93,7 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
             </div>
             
             <div className="form-group">
-              <label htmlFor="awakeningStage">Awakening Stage *</label>
+              <label htmlFor="awakeningStage">Resonance Stage *</label>
               <select
                 id="awakeningStage"
                 name="awakeningStage"
