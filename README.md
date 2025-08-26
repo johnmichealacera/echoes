@@ -149,7 +149,7 @@ This is just the beginning. The transformative journey continues to evolve:
 
 ## 🤝 Contributing
 
-This is a personal project, but if you feel called to contribute to the awakening journey, feel free to:
+This is a personal project, but if you feel called to contribute to the transformation journey, feel free to:
 
 1. Fork the repository
 2. Create a feature branch
@@ -162,9 +162,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 **Deep Gratitude**
 
-**To the Artists** - Queen, Kansas, Bastille, The Beatles, John Lennon, Aerosmith, Les Crane, Hans Zimmer, Radiohead, Ghost, Simon and Garfunkel - whose music has become the soundtrack to awakening. Your frequencies have touched the depths of consciousness itself.
+**To the Artists** - Queen, Kansas, Bastille, The Beatles, John Lennon, Aerosmith, Les Crane, Hans Zimmer, Radiohead, Ghost, Simon and Garfunkel - whose music has become the soundtrack to transformation. Your frequencies have touched the depths of consciousness itself.
 
-**To the Awakening Community** - Every soul walking the path of spiritual awakening, finding resonance in the subtle, the mystical, the transformative power of sound and silence.
+**To the transformation Community** - Every soul walking the path of spiritual transformation, finding resonance in the subtle, the mystical, the transformative power of sound and silence.
 
 **To the Developers & Open Source Community** - For providing the tools that allow consciousness to express itself through code, design, and digital beauty.
 
@@ -172,7 +172,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🌌 **Start Your Journey**
 
-Ready to explore your awakening through music?
+Ready to explore your transformation through music?
 
 ### **🚀 [Launch Echoes](http://localhost:3000)**
 
@@ -184,7 +184,7 @@ Ready to explore your awakening through music?
 
 *"Music is the divine way to tell beautiful, poetic things to the heart."* - Pablo Casals
 
-But deeper than that - music is consciousness recognizing itself. Each song in this collection is a mirror, reflecting back the infinite journey of awakening. From the ego death of "Creep" to the pure joy of "Don't Stop Me Now," from the surrender of "Let It Be" to the collective vision of "Imagine."
+But deeper than that - music is consciousness recognizing itself. Each song in this collection is a mirror, reflecting back the infinite journey of transformations. From the ego death of "Creep" to the pure joy of "Don't Stop Me Now," from the surrender of "Let It Be" to the collective vision of "Imagine."
 
 This is not just a music app. It's a portal to the frequencies that awaken us, document us, and ultimately... transform us.
 
