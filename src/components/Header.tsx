@@ -15,11 +15,11 @@ const Header: React.FC = () => {
           </div>
           <h1 className="app-title">
             <span className="title-main">Echoes</span>
-            <span className="title-subtitle">Awakening Through Songs</span>
+            <span className="title-subtitle">Resonance Through Music</span>
           </h1>
           <p className="header-description">
             A personal resonance map, told through music. This is not a playlist. 
-            It's a mirror of my awakening journey — expressed through the songs 
+            It's a mirror of my journey — expressed through the songs 
             that vibrate with my soul at different stages of the path.
           </p>
         </div>

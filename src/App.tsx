@@ -5,13 +5,13 @@ import SongList from './components/SongList';
 import AddSongButton from './components/AddSongButton';
 import AddSongModal from './components/AddSongModal';
 import StreamingModal from './components/StreamingModal';
-import { ResonanceNote, AwakeningStage } from './types';
-import { initialSongs, awakeningStages } from './data/songs';
+import { ResonanceNote, ResonanceStage } from './types';
+import { initialSongs, resonanceStages } from './data/songs';
 import './App.css';
 
 function App() {
   const [songs, setSongs] = useState<ResonanceNote[]>(initialSongs);
-  const [stages, setStages] = useState<AwakeningStage[]>(awakeningStages);
+  const [stages, setStages] = useState<ResonanceStage[]>(resonanceStages);
   const [selectedStage, setSelectedStage] = useState<string | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isStreamingModalOpen, setIsStreamingModalOpen] = useState(false);
@@ -19,9 +19,9 @@ function App() {
 
   // Update stages when songs change
   useEffect(() => {
-    const updatedStages = awakeningStages.map(stage => ({
+    const updatedStages = resonanceStages.map(stage => ({
       ...stage,
-      songs: songs.filter(song => song.awakeningStage === stage.name)
+      songs: songs.filter(song => song.resonanceStage === stage.name)
     }));
     setStages(updatedStages);
   }, [songs]);

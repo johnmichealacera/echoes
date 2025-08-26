@@ -11,7 +11,7 @@ interface SongListProps {
 
 const SongList: React.FC<SongListProps> = ({ songs, selectedStage, onListenClick }) => {
   const filteredSongs = selectedStage 
-    ? songs.filter(song => song.awakeningStage.toLowerCase() === selectedStage)
+    ? songs.filter(song => song.resonanceStage.toLowerCase() === selectedStage)
     : songs;
 
   if (filteredSongs.length === 0) {

@@ -54,9 +54,9 @@ const SongCard: React.FC<SongCardProps> = ({ song, onListenClick }) => {
           </span>
           <span 
             className="stage-badge"
-            style={{ backgroundColor: getStageColor(song.awakeningStage) }}
+            style={{ backgroundColor: getStageColor(song.resonanceStage) }}
           >
-            {song.awakeningStage}
+            {song.resonanceStage}
           </span>
         </div>
       </div>

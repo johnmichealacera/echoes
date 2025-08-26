@@ -14,7 +14,7 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
     artist: '',
     resonance: 'High' as const,
     reflection: '',
-    awakeningStage: 'Death' as const
+    resonanceStage: 'Death' as const
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -25,7 +25,7 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
       artist: '',
       resonance: 'High',
       reflection: '',
-      awakeningStage: 'Death'
+      resonanceStage: 'Death'
     });
     onClose();
   };
@@ -97,7 +97,7 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
               <select
                 id="awakeningStage"
                 name="awakeningStage"
-                value={formData.awakeningStage}
+                value={formData.resonanceStage}
                 onChange={handleChange}
                 required
               >

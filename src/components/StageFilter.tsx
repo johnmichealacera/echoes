@@ -1,9 +1,9 @@
 import React from 'react';
-import { AwakeningStage } from '../types';
+import { ResonanceStage } from '../types';
 import './StageFilter.css';
 
 interface StageFilterProps {
-  stages: AwakeningStage[];
+  stages: ResonanceStage[];
   selectedStage: string | null;
   onStageSelect: (stageId: string | null) => void;
 }
@@ -12,7 +12,7 @@ const StageFilter: React.FC<StageFilterProps> = ({ stages, selectedStage, onStag
   return (
     <div className="stage-filter">
       <div className="filter-header">
-        <h3 className="filter-title">Filter by Awakening Stage</h3>
+        <h3 className="filter-title">Filter by Resonance Stage</h3>
         <button 
           className={`filter-btn all-stages ${!selectedStage ? 'active' : ''}`}
           onClick={() => onStageSelect(null)}

@@ -1,4 +1,4 @@
-import { ResonanceNote, AwakeningStage } from '../types';
+import { ResonanceNote, ResonanceStage } from '../types';
 
 export const initialSongs: ResonanceNote[] = [
   {
@@ -6,8 +6,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Bohemian Rhapsody',
     artist: 'Queen',
     resonance: 'Very high',
-    reflection: 'Listening to the higher self and killing of ego. Loneliness, setbacks, and the full spectrum of the awakening journey.',
-    awakeningStage: 'Death',
+    reflection: 'Listening to that voice beyond the noise. Loneliness, setbacks, and the full spectrum of transformation.',
+    resonanceStage: 'Death',
     createdAt: '8/21/2025',
     youtubeId: 'fJ9rUzIMcZQ' // Queen - Bohemian Rhapsody (Official Video)
   },
@@ -17,7 +17,7 @@ export const initialSongs: ResonanceNote[] = [
     artist: 'Kansas',
     resonance: 'Very high',
     reflection: 'We are all just nothing — but that realization is liberating.',
-    awakeningStage: 'Death',
+    resonanceStage: 'Death',
     createdAt: '8/21/2025',
     youtubeId: 'tH2w6Oxx0kQ' // Kansas - Dust in the Wind (Official Audio)
   },
@@ -26,8 +26,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Pompeii',
     artist: 'Bastille',
     resonance: 'High',
-    reflection: 'Life is short; ego clouds our time span. Awakening means noticing before it\'s too late.',
-    awakeningStage: 'Death',
+    reflection: 'Life is short; ego clouds our time span. Noticing before it\'s too late.',
+    resonanceStage: 'Death',
     createdAt: '8/21/2025',
     youtubeId: '8nfhHBJQXOY' // Bastille - Pompeii (Official Music Video)
   },
@@ -36,8 +36,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Let It Be',
     artist: 'The Beatles',
     resonance: 'High',
-    reflection: 'Surrender. Let everything unfold. Trust the frequency of awakening.',
-    awakeningStage: 'Surrender',
+    reflection: 'Surrender. Let everything unfold. Trust the rhythm of life.',
+    resonanceStage: 'Surrender',
     createdAt: '8/21/2025',
     youtubeId: 'QDYfEBY9NM4' // The Beatles - Let It Be (Official Audio)
   },
@@ -46,8 +46,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Don\'t Stop Me Now',
     artist: 'Queen',
     resonance: 'Very high',
-    reflection: 'Pure higher-self awakening. Overflowing vibration. Irresistible joy.',
-    awakeningStage: 'Joy',
+    reflection: 'Pure essence flowing through. Overflowing vibration. Irresistible joy.',
+    resonanceStage: 'Joy',
     createdAt: '8/21/2025',
     youtubeId: 'HgzGwKwLmgM' // Queen - Don't Stop Me Now (Official Video)
   },
@@ -56,8 +56,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Imagine',
     artist: 'John Lennon',
     resonance: 'High',
-    reflection: 'A vision of humanity awake together — not just me, but all of us.',
-    awakeningStage: 'Vision',
+    reflection: 'A vision of humanity united — not just me, but all of us.',
+    resonanceStage: 'Vision',
     createdAt: '8/21/2025',
     youtubeId: 'YkgkThdzX-8' // John Lennon - Imagine (Official Video)
   },
@@ -66,8 +66,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'I Don\'t Want to Miss a Thing',
     artist: 'Aerosmith',
     resonance: 'High',
-    reflection: 'High resonance and vibration — the pure love that awakens us to presence in every moment.',
-    awakeningStage: 'Joy',
+    reflection: 'High resonance and vibration — the pure love that brings presence to every moment.',
+    resonanceStage: 'Joy',
     createdAt: '8/21/2025',
     youtubeId: 'JkK8g6FMEXE' // Aerosmith - I Don't Want to Miss a Thing (Official Music Video)
   },
@@ -77,7 +77,7 @@ export const initialSongs: ResonanceNote[] = [
     artist: 'Les Crane (English Version)',
     resonance: 'High',
     reflection: 'Pure bliss with high resonance — the wisdom of accepting what is and finding peace in the cosmic order.',
-    awakeningStage: 'Surrender',
+    resonanceStage: 'Surrender',
     createdAt: '8/21/2025',
     youtubeId: '-eDsJNsG58M' // Les Crane - Desiderata (user-recommended version)
   },
@@ -86,8 +86,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Remember',
     artist: 'Hans Zimmer',
     resonance: 'Medium',
-    reflection: 'Emotionally moving — contemplating and remembering our higher self through the depths of cinematic awakening.',
-    awakeningStage: 'Vision',
+    reflection: 'Emotionally moving — contemplating and remembering our essence through the depths of cinematic storytelling.',
+    resonanceStage: 'Vision',
     createdAt: '8/21/2025',
     youtubeId: 'RakhywpkY-k' // Hans Zimmer - Remember (Official Lion King Soundtrack)
   },
@@ -96,8 +96,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Creep',
     artist: 'Radiohead',
     resonance: 'High',
-    reflection: 'Our ego wanting us to be noticed, but we purely dissolve it for pure love and awakening.',
-    awakeningStage: 'Death',
+    reflection: 'Our ego wanting us to be noticed, but we purely dissolve it for pure love and understanding.',
+    resonanceStage: 'Death',
     createdAt: '8/21/2025',
     youtubeId: 'XFkzRNyygfk' // Radiohead - Creep (Official Music Video)
   },
@@ -107,7 +107,7 @@ export const initialSongs: ResonanceNote[] = [
     artist: 'Ghost',
     resonance: 'Low',
     reflection: 'The ego talking and feeling empty as if walking in a path that leads to nowhere. Gives caution that when we embody the ego, life seems to have no meaning.',
-    awakeningStage: 'Vision',
+    resonanceStage: 'Vision',
     createdAt: '08/25/2025',
     youtubeId: 'rv7jSq1Qkhs' // Ghost - Guiding Light (embed-friendly version)
   },
@@ -116,8 +116,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'The Sound of Silence',
     artist: 'Simon and Garfunkel',
     resonance: 'Very high',
-    reflection: 'The loneliness of awakening and being the observer and watcher in this world. Sending message to the world to start their awakening journey.',
-    awakeningStage: 'Vision',
+    reflection: 'The loneliness of being the observer and watcher in this world. Sending message to the world to start their journey of awareness.',
+    resonanceStage: 'Vision',
     createdAt: '8/21/2025',
     youtubeId: 'NAEppFUWLfc' // Simon and Garfunkel - The Sound of Silence (embed-friendly version)
   },
@@ -126,8 +126,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Radioactive',
     artist: 'Imagine Dragons',
     resonance: 'Very high',
-    reflection: 'Feelings of awakening, of truly being present at the moment, the total annihilation of the programming, and knowing we are still walking in the system but with a renewed hunger and vision.',
-    awakeningStage: 'Vision',
+    reflection: 'Feelings of truly being present at the moment, the total dissolution of old patterns, and knowing we are still walking in the system but with a renewed hunger and vision.',
+    resonanceStage: 'Vision',
     createdAt: '08/24/2025',
     youtubeId: 'ktvTqknDobU' // Imagine Dragons - Radioactive (Official Music Video)
   },
@@ -136,8 +136,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Hall of Fame',
     artist: 'The Script',
     resonance: 'Very high',
-    reflection: 'Breaking community stigma, awakening does not need permission, following your higher self. No more chains, no more limitations.',
-    awakeningStage: 'Vision',
+    reflection: 'Breaking community stigma, transformation does not need permission, following your inner voice. No more chains, no more limitations.',
+    resonanceStage: 'Vision',
     createdAt: '08/24/2025',
     youtubeId: 'mk48xRzuNvA' // The Script - Hall of Fame ft. will.i.am (Official Video)
   },
@@ -146,8 +146,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Counting Stars',
     artist: 'OneRepublic',
     resonance: 'Very high',
-    reflection: 'Following higher self, seeing the programming and matrix system as clear as sky, fighting with the ego.',
-    awakeningStage: 'Death',
+    reflection: 'Following inner truth, seeing the patterns and systems as clear as sky, fighting with the ego.',
+    resonanceStage: 'Death',
     createdAt: '08/24/2025',
     youtubeId: 'hT_nvWreIhg' // OneRepublic - Counting Stars (Official Music Video)
   },
@@ -157,7 +157,7 @@ export const initialSongs: ResonanceNote[] = [
     artist: 'Justin Timberlake',
     resonance: 'High',
     reflection: 'When the vibration and frequency turns on like in deep work and resonance with high vibration things the feeling is pure joy and bliss. Freedom of expression and pure creativity in motion.',
-    awakeningStage: 'Joy',
+    resonanceStage: 'Joy',
     createdAt: '08/24/2024',
     youtubeId: 'ru0K8uYEZWw' // Justin Timberlake - Can't Stop The Feeling! (Official Video)
   },
@@ -166,8 +166,8 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Best Day of My Life',
     artist: 'American Authors',
     resonance: 'High',
-    reflection: 'Fully realizing awakening. Loving the feeling and enjoying every moment. Anagram on do not wake the ego up.',
-    awakeningStage: 'Joy',
+    reflection: 'Fully realizing transformation. Loving the feeling and enjoying every moment. Anagram on do not wake the ego up.',
+    resonanceStage: 'Joy',
     createdAt: '08/24/2025',
     youtubeId: 'Y66j_BUCBMY' // American Authors - Best Day Of My Life (Official Music Video)
   },
@@ -177,7 +177,7 @@ export const initialSongs: ResonanceNote[] = [
     artist: 'Avicii',
     resonance: 'Medium',
     reflection: 'Started to realize, the society does not know anything. Starting to hear the words of the inner self. Still listening, seeds are starting to grow.',
-    awakeningStage: 'Vision',
+    resonanceStage: 'Vision',
     createdAt: '08/24/2025',
     youtubeId: 'IcrbM1l_BoI' // Avicii - Wake Me Up (Official Video)
   },
@@ -186,40 +186,40 @@ export const initialSongs: ResonanceNote[] = [
     songTitle: 'Titanium',
     artist: 'Sia',
     resonance: 'High',
-    reflection: 'Full embrace of awakening. Society ego reflections does not chip in the higher self. At a stage where it is fully aware of the truth inside.',
-    awakeningStage: 'Surrender',
+    reflection: 'Full embrace of transformation. Society ego reflections does not chip in the inner truth. At a stage where it is fully aware of the truth inside.',
+    resonanceStage: 'Surrender',
     createdAt: '08/24/2025',
     youtubeId: 'JRfuAukYTKg' // Sia - Titanium ft. David Guetta (Official Video)
   }
 ];
 
-export const awakeningStages: AwakeningStage[] = [
+export const resonanceStages: ResonanceStage[] = [
   {
     id: 'death',
     name: 'Death',
-    description: 'The death of ego, the realization of impermanence',
+    description: 'The dissolution of old patterns, the realization of impermanence',
     color: '#dc2626',
-    songs: initialSongs.filter(song => song.awakeningStage === 'Death')
+    songs: initialSongs.filter(song => song.resonanceStage === 'Death')
   },
   {
     id: 'surrender',
     name: 'Surrender',
     description: 'Letting go, trusting the process, accepting what is',
     color: '#7c3aed',
-    songs: initialSongs.filter(song => song.awakeningStage === 'Surrender')
+    songs: initialSongs.filter(song => song.resonanceStage === 'Surrender')
   },
   {
     id: 'joy',
     name: 'Joy',
-    description: 'Pure higher-self awakening, overflowing vibration',
+    description: 'Pure essence flowing, overflowing vibration',
     color: '#059669',
-    songs: initialSongs.filter(song => song.awakeningStage === 'Joy')
+    songs: initialSongs.filter(song => song.resonanceStage === 'Joy')
   },
   {
     id: 'vision',
     name: 'Vision',
-    description: 'Seeing the collective awakening, humanity together',
+    description: 'Seeing the collective potential, humanity together',
     color: '#0891b2',
-    songs: initialSongs.filter(song => song.awakeningStage === 'Vision')
+    songs: initialSongs.filter(song => song.resonanceStage === 'Vision')
   }
 ];
