@@ -190,6 +190,96 @@ export const initialSongs: ResonanceNote[] = [
     resonanceStage: 'Surrender',
     createdAt: '08/24/2025',
     youtubeId: 'JRfuAukYTKg' // Sia - Titanium ft. David Guetta (Official Video)
+  },
+  {
+    id: '20',
+    songTitle: 'Crazy',
+    artist: 'Gnarls Barkley',
+    resonance: 'High',
+    reflection: 'The true perception in the eyes of transformation',
+    resonanceStage: 'Vision',
+    createdAt: '10/26/2025',
+    youtubeId: 'gFtjckFWRZM' // Gnarls Barkley - Crazy (Official Video)
+  },
+  {
+    id: '21',
+    songTitle: 'Mad World',
+    artist: 'Tears for Fears / Gary Jules',
+    resonance: 'High',
+    reflection: 'Shadow integration and work, told through storytelling',
+    resonanceStage: 'Death',
+    createdAt: '10/26/2025',
+    youtubeId: 'etSbOs3aUqI' // Gary Jules - Mad World
+  },
+  {
+    id: '22',
+    songTitle: 'Eternity',
+    artist: 'Alex Warren',
+    resonance: 'Very high',
+    reflection: 'Fully meeting your transformation and remembering which feels like ancient wisdom',
+    resonanceStage: 'Joy',
+    createdAt: '10/26/2025',
+    youtubeId: 'jXqf3uqLkkU' // Alex Warren - Eternity
+  },
+  {
+    id: '23',
+    songTitle: 'Bring Me to Life',
+    artist: 'Evanescence',
+    resonance: 'Very high',
+    reflection: 'At the edge of transformation, only move is to acknowledge and not suppress',
+    resonanceStage: 'Death',
+    createdAt: '10/26/2025',
+    youtubeId: '3YxaaGgTQYM' // Evanescence - Bring Me To Life (Official Video)
+  },
+  {
+    id: '24',
+    songTitle: 'The Sign',
+    artist: 'Ace of Base',
+    resonance: 'Medium',
+    reflection: 'Seeing the signs everywhere',
+    resonanceStage: 'Vision',
+    createdAt: '10/26/2025',
+    youtubeId: 'iqu132vTl5Y' // Ace of Base - The Sign
+  },
+  {
+    id: '25',
+    songTitle: 'Unstoppable',
+    artist: 'Sia',
+    resonance: 'Very high',
+    reflection: 'Fully embracing the transformation, knowing you are invincible, whole and worthy',
+    resonanceStage: 'Joy',
+    createdAt: '10/26/2025',
+    youtubeId: 'YaEG2aWJnZ8' // Sia - Unstoppable (Official Audio)
+  },
+  {
+    id: '26',
+    songTitle: 'I\'m Still Here',
+    artist: 'Sia',
+    resonance: 'High',
+    reflection: 'Shadow integration, ego and the I am',
+    resonanceStage: 'Death',
+    createdAt: '10/26/2025',
+    youtubeId: 'Jrgbjk45lFA' // Sia - I'm Still Here (from Treasure Planet)
+  },
+  {
+    id: '27',
+    songTitle: 'The Greatest',
+    artist: 'Sia',
+    resonance: 'Very high',
+    reflection: 'Fully embracing the transformation, knowing you are invincible, whole and worthy',
+    resonanceStage: 'Joy',
+    createdAt: '10/26/2025',
+    youtubeId: 'GKSRyLdjsPA' // Sia - The Greatest (Official Audio)
+  },
+  {
+    id: '28',
+    songTitle: 'Birds',
+    artist: 'Imagine Dragons',
+    resonance: 'High',
+    reflection: 'Seeing through the matrix and still flying through your wings',
+    resonanceStage: 'Vision',
+    createdAt: '10/26/2025',
+    youtubeId: 'vOXZkm9p_zY' // Imagine Dragons - Birds
   }
 ];
 
