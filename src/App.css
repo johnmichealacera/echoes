@@ -32,8 +32,55 @@
   font-size: 0.9em;
 }
 
+/* Back-to-top (@jmacera/back-to-top-component): Tailwind defaults don’t apply here; style explicitly. */
+.echoes-back-to-top {
+  position: fixed;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(147, 51, 234, 0.45);
+  border-radius: 9999px;
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.45) 0%,
+    rgba(147, 51, 234, 0.22) 100%
+  );
+  color: #f8fafc;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.echoes-back-to-top:hover {
+  transform: translateY(-2px) scale(1.05);
+  border-color: rgba(167, 139, 250, 0.75);
+  box-shadow: 0 12px 28px rgba(147, 51, 234, 0.35);
+}
+
+.echoes-back-to-top:focus-visible {
+  outline: 2px solid rgba(167, 139, 250, 0.95);
+  outline-offset: 3px;
+}
+
+.echoes-back-to-top-icon {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
 @media (max-width: 768px) {
   .main-content {
     padding: 0 1rem 3rem;
+  }
+
+  .echoes-back-to-top {
+    bottom: 6.25rem !important;
+    right: 1.5rem !important;
   }
 }

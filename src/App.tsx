@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
+import BackToTop from './components/BackToTop';
 import StageFilter from './components/StageFilter';
 import SongList from './components/SongList';
 import AddSongButton from './components/AddSongButton';
@@ -164,6 +165,20 @@ function App() {
         isOpen={isStreamingModalOpen}
         onClose={closeStreamingModal}
         song={selectedSong}
+      />
+
+      <BackToTop
+        threshold={320}
+        smooth
+        bottom={118}
+        right={32}
+        className="echoes-back-to-top"
+        ariaLabel="Back to top"
+        icon={
+          <span className="echoes-back-to-top-icon" aria-hidden>
+            ↑
+          </span>
+        }
       />
     </div>
   );
