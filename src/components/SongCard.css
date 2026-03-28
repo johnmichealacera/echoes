@@ -131,6 +131,18 @@
   transform: translateY(-1px);
 }
 
+.edit-btn {
+  background: rgba(8, 145, 178, 0.15);
+  border-color: rgba(8, 145, 178, 0.35);
+  color: #67e8f9;
+}
+
+.edit-btn:hover {
+  background: rgba(8, 145, 178, 0.28);
+  border-color: rgba(8, 145, 178, 0.55);
+  color: #ecfeff;
+}
+
 .play-btn {
   background: linear-gradient(135deg, rgba(147, 51, 234, 0.3) 0%, rgba(147, 51, 234, 0.2) 100%);
   border-color: rgba(147, 51, 234, 0.4);

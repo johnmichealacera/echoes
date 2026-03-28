@@ -4,6 +4,8 @@
   "description": "A personal resonance map, told through music - an resonance journey web app",
   "private": true,
   "dependencies": {
+    "@jmacera/back-to-top-component": "npm:@jsr/jmacera__back-to-top-component@^1.0.3",
+    "@supabase/supabase-js": "^2.100.1",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",

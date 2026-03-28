@@ -1,5 +1,6 @@
 import { ResonanceNote, ResonanceStage } from '../types';
 
+/** Reference data; the running app loads from Supabase. Seed: `supabase/migrations/20250328140000_echoes.sql`. */
 export const initialSongs: ResonanceNote[] = [
   {
     id: '1',

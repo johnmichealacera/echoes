@@ -5,9 +5,10 @@ import './SongCard.css';
 interface SongCardProps {
   song: ResonanceNote;
   onListenClick: (song: ResonanceNote) => void;
+  onEditClick: (song: ResonanceNote) => void;
 }
 
-const SongCard: React.FC<SongCardProps> = ({ song, onListenClick }) => {
+const SongCard: React.FC<SongCardProps> = ({ song, onListenClick, onEditClick }) => {
   const getResonanceColor = (resonance: string) => {
     switch (resonance) {
       case 'Very high':
@@ -70,9 +71,23 @@ const SongCard: React.FC<SongCardProps> = ({ song, onListenClick }) => {
           Added {new Date(song.createdAt).toLocaleDateString()}
         </div>
         <div className="song-actions">
-          <button 
+          <button
+            type="button"
+            className="action-btn edit-btn"
+            onClick={e => {
+              e.stopPropagation();
+              onEditClick(song);
+            }}
+          >
+            Edit
+          </button>
+          <button
+            type="button"
             className="action-btn play-btn"
-            onClick={() => onListenClick(song)}
+            onClick={e => {
+              e.stopPropagation();
+              onListenClick(song);
+            }}
           >
             <span className="play-icon">▶</span>
             Listen

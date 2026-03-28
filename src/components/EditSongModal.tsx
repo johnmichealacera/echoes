@@ -1,42 +1,52 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ResonanceNote } from '../types';
 import './AddSongModal.css';
 
-interface AddSongModalProps {
+interface EditSongModalProps {
   isOpen: boolean;
+  song: ResonanceNote | null;
   onClose: () => void;
-  onAddSong: (song: Omit<ResonanceNote, 'id' | 'createdAt'>) => void | Promise<void>;
+  onSave: (
+    id: string,
+    data: Omit<ResonanceNote, 'id' | 'createdAt'>
+  ) => void | Promise<void>;
 }
 
-const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong }) => {
+const EditSongModal: React.FC<EditSongModalProps> = ({ isOpen, song, onClose, onSave }) => {
   const [formData, setFormData] = useState({
     songTitle: '',
     artist: '',
-    resonance: 'High' as const,
+    resonance: 'High' as ResonanceNote['resonance'],
     reflection: '',
-    resonanceStage: 'Death' as const,
-    youtubeId: ''
+    resonanceStage: 'Death' as ResonanceNote['resonanceStage'],
+    youtubeId: '',
   });
+
+  useEffect(() => {
+    if (!isOpen || !song) return;
+    setFormData({
+      songTitle: song.songTitle,
+      artist: song.artist,
+      resonance: song.resonance,
+      reflection: song.reflection,
+      resonanceStage: song.resonanceStage,
+      youtubeId: song.youtubeId ?? '',
+    });
+    // Only re-run when opening or switching songs — not when parent passes a new object for the same row (would wipe edits).
+  }, [isOpen, song?.id]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!song) return;
     const youtubeId = formData.youtubeId.trim();
     try {
-      await onAddSong({
+      await onSave(song.id, {
         songTitle: formData.songTitle,
         artist: formData.artist,
         resonance: formData.resonance,
         reflection: formData.reflection,
         resonanceStage: formData.resonanceStage,
-        ...(youtubeId ? { youtubeId } : {})
-      });
-      setFormData({
-        songTitle: '',
-        artist: '',
-        resonance: 'High',
-        reflection: '',
-        resonanceStage: 'Death',
-        youtubeId: ''
+        ...(youtubeId ? { youtubeId } : {}),
       });
       onClose();
     } catch {
@@ -44,30 +54,34 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  if (!isOpen) return null;
+  if (!isOpen || !song) return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
-          <h2 className="modal-title">Add New Resonance Song</h2>
-          <button className="close-btn" onClick={onClose}>×</button>
+          <h2 className="modal-title">Edit Resonance Song</h2>
+          <button type="button" className="close-btn" onClick={onClose} aria-label="Close">
+            ×
+          </button>
         </div>
-        
+
         <form onSubmit={handleSubmit} className="song-form">
           <div className="form-group">
-            <label htmlFor="songTitle">Song Title *</label>
+            <label htmlFor="edit-songTitle">Song Title *</label>
             <input
               type="text"
-              id="songTitle"
+              id="edit-songTitle"
               name="songTitle"
               value={formData.songTitle}
               onChange={handleChange}
@@ -75,12 +89,12 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
               placeholder="Enter song title"
             />
           </div>
-          
+
           <div className="form-group">
-            <label htmlFor="artist">Artist *</label>
+            <label htmlFor="edit-artist">Artist *</label>
             <input
               type="text"
-              id="artist"
+              id="edit-artist"
               name="artist"
               value={formData.artist}
               onChange={handleChange}
@@ -88,12 +102,12 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
               placeholder="Enter artist name"
             />
           </div>
-          
+
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="resonance">Resonance Level *</label>
+              <label htmlFor="edit-resonance">Resonance Level *</label>
               <select
-                id="resonance"
+                id="edit-resonance"
                 name="resonance"
                 value={formData.resonance}
                 onChange={handleChange}
@@ -105,11 +119,11 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
                 <option value="Low">Low</option>
               </select>
             </div>
-            
+
             <div className="form-group">
-              <label htmlFor="resonanceStage">Resonance Stage *</label>
+              <label htmlFor="edit-resonanceStage">Resonance Stage *</label>
               <select
-                id="resonanceStage"
+                id="edit-resonanceStage"
                 name="resonanceStage"
                 value={formData.resonanceStage}
                 onChange={handleChange}
@@ -122,11 +136,11 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
               </select>
             </div>
           </div>
-          
+
           <div className="form-group">
-            <label htmlFor="reflection">Resonance Reflection *</label>
+            <label htmlFor="edit-reflection">Resonance Reflection *</label>
             <textarea
-              id="reflection"
+              id="edit-reflection"
               name="reflection"
               value={formData.reflection}
               onChange={handleChange}
@@ -137,23 +151,23 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
           </div>
 
           <div className="form-group">
-            <label htmlFor="youtubeId">YouTube video ID (optional)</label>
+            <label htmlFor="edit-youtubeId">YouTube video ID (optional)</label>
             <input
               type="text"
-              id="youtubeId"
+              id="edit-youtubeId"
               name="youtubeId"
               value={formData.youtubeId}
               onChange={handleChange}
               placeholder="e.g. fJ9rUzIMcZQ"
             />
           </div>
-          
+
           <div className="form-actions">
             <button type="button" className="btn-secondary" onClick={onClose}>
               Cancel
             </button>
             <button type="submit" className="btn-primary">
-              Add Song
+              Save changes
             </button>
           </div>
         </form>
@@ -162,4 +176,4 @@ const AddSongModal: React.FC<AddSongModalProps> = ({ isOpen, onClose, onAddSong 
   );
 };
 
-export default AddSongModal;
+export default EditSongModal;

@@ -7,9 +7,10 @@ interface SongListProps {
   songs: ResonanceNote[];
   selectedStage: string | null;
   onListenClick: (song: ResonanceNote) => void;
+  onEditClick: (song: ResonanceNote) => void;
 }
 
-const SongList: React.FC<SongListProps> = ({ songs, selectedStage, onListenClick }) => {
+const SongList: React.FC<SongListProps> = ({ songs, selectedStage, onListenClick, onEditClick }) => {
   const filteredSongs = selectedStage 
     ? songs.filter(song => song.resonanceStage.toLowerCase() === selectedStage)
     : songs;
@@ -44,6 +45,7 @@ const SongList: React.FC<SongListProps> = ({ songs, selectedStage, onListenClick
             key={song.id}
             song={song}
             onListenClick={onListenClick}
+            onEditClick={onEditClick}
           />
         ))}
       </div>
