@@ -13,23 +13,16 @@ const StreamingModal: React.FC<StreamingModalProps> = ({ isOpen, onClose, song }
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    if (song && isOpen) {
-      searchYouTubeVideo();
-    }
-  }, [song, isOpen]);
+    if (!song || !isOpen) return;
 
-  const searchYouTubeVideo = async () => {
-    if (!song) return;
-    
     setIsLoading(true);
-    
-    // Simulate finding a video - in a real app you'd use YouTube Data API
-    setTimeout(() => {
-      // For demo, we'll show the embed interface
+    const t = window.setTimeout(() => {
       setYoutubeVideoId('search-ready');
       setIsLoading(false);
     }, 1000);
-  };
+
+    return () => window.clearTimeout(t);
+  }, [song, isOpen]);
 
   if (!isOpen || !song) return null;
 

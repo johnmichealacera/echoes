@@ -33,6 +33,7 @@ const EditSongModal: React.FC<EditSongModalProps> = ({ isOpen, song, onClose, on
       youtubeId: song.youtubeId ?? '',
     });
     // Only re-run when opening or switching songs — not when parent passes a new object for the same row (would wipe edits).
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- `song` omitted on purpose (see comment above).
   }, [isOpen, song?.id]);
 
   const handleSubmit = async (e: React.FormEvent) => {
